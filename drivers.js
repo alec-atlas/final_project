@@ -1,3 +1,6 @@
+
+let db = firebase.firestore()
+
 async function pageLoaded() {
     let response = await fetch('https://kiei451.com/api/products.json')
     let json = await response.json()
