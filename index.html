@@ -11,7 +11,7 @@
 
 <body>
   <div class="mx-auto container">
-  <!-- <div class="sign-in-or-sign-out"></div> -->
+  <div class="sign-in-or-sign-out"></div>
 
   <!-- HEADER -->
     <div>
@@ -39,8 +39,12 @@
     </div>
 
   <!-- LISTING OF DRIVERS -->
-    <div class="drivers md:-mx-4 mt-8 flex flex-wrap"></div>
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+  <div class="drivers">
+    <!-- Drivers rendered from JavaScript-->
+  </div>
+
+    <!-- <div class="drivers md:-mx-4 mt-8 flex flex-wrap"></div> -->
+      <!-- <div class="p-4 w-full md:w-1/2 lg:w-1/3">
         <div class="border h-full p-4 flex flex-col">
             <h2 class="text-lg font-bold mb-4">Alec Atlas</h2>
             <div class="mb-4"><img src="alec_profile_DELETE.jpg">
@@ -74,7 +78,7 @@
             </div>
           <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
         </div>
-      </div>
+      </div> -->
   </div>
 
   <!-- Put the Firebase config here -->
@@ -87,18 +91,18 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {    
-    apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
-    authDomain: "golden-7b638.firebaseapp.com",
-    projectId: "golden-7b638",
-    storageBucket: "golden-7b638.appspot.com",
-    messagingSenderId: "738520258548",
-    appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+      apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+      authDomain: "golden-7b638.firebaseapp.com",
+      projectId: "golden-7b638",
+      storageBucket: "golden-7b638.appspot.com",
+      messagingSenderId: "738520258548",
+      appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
     } // replace
 
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-  <script src="index.js"></script>
+  <script src="golden.js"></script>
 </body>
 
 </html>
