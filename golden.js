@@ -5,6 +5,7 @@ firebase.auth().onAuthStateChanged(async function (user) {
     // fetch all driver data from the get_drivers endpoint and render driver profiles
     let response = await fetch('/.netlify/functions/get_drivers')
     let drivers = await response.json()
+    // console.log(drivers)
     for (let i = 0; i < drivers.length; i++) {
       let driver = drivers[i]
       renderDriver(driver)
@@ -70,18 +71,18 @@ firebase.auth().onAuthStateChanged(async function (user) {
   }
 })
 
-async function renderDriver(driverData) {
+async function renderDriver(driver) {
   document.querySelector('.drivers').insertAdjacentHTML('beforeend', `
-    <div class=".driver-${driverData.id} p-4 w-full md:w-1/2 lg:w-1/3">
+    <div class=".driver-${driver.id} p-4 w-full md:w-1/2 lg:w-1/3">
       <div class="border h-full p-4 flex flex-col">
-          <h2 class="text-lg font-bold mb-2">${driverData.name}</h2>
-          <h1 class="italic mb-4">${driverData.email}</h1>
-          <div class="mb-4"><img src="${driverData.profilePicUrl}">
+          <h2 class="text-lg font-bold mb-2">${driver.name}</h2>
+          <h1 class="italic mb-4">${driver.email}</h1>
+          <div class="mb-4"><img src="${driver.profilePicUrl}">
         </div>
           <div class="mb-4 text-gray-900">
             I am the best driver in all of Chicago!
           </div>
-        <div class="mt-auto text-yellow-500 text-2xl">$${driverData.fee}/hour</div>
+        <div class="mt-auto text-yellow-500 text-2xl">$${driver.fee}/hour</div>
       </div>
     </div>
   `)
