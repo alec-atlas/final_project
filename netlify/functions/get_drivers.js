@@ -4,9 +4,7 @@ exports.handler = async function (event) {
     let db = firebase.firestore()
     let driversData = []
 
-    let driversQuery = await db.collection('drivers')
-                               .orderBy('created')
-                               .get()
+    let driversQuery = await db.collection('drivers').get()
 
     let drivers = driversQuery.docs
 
