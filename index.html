@@ -9,79 +9,106 @@
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
-<body>
-  <div class="mx-auto container">
+<body class="mx-auto container">
     <div class="sign-in-or-sign-out"></div>
 
     <!-- HEADER -->
-    <div>
-      <h1 class="text-xl py-4 px-8">
+    <div class= "border flex mt-4">
+
+      <div class="w-2/3 text-xl py-2 px-2">
         <a href="index.html" class="mx-auto container">
           <span class="font-bold text-yellow-500">GOLDEN</span>
         </a>
-      </h1>
-    </div>
+      </div>
+    
 
-    <!-- LISTING OF DRIVERS -->
-    <div class="drivers"></div>
-    <div>
-      <h1 class="text-xl py-4 px-8">
-        <a href="rider_login_signup.html" class="mx-auto container">
-          <span class="font-bold text-blue-500">Rider Sign-in</span>
-        </a>
-      </h1>
-    </div>
-
-    <div>
-      <h1 class="text-xl py-4 px-8">
-        <a href="driver_signup.html" class="mx-auto container">
-          <span class="font-bold text-green-500">Driver Sign-up</span>
-        </a>
-      </h1>
-    </div>
-
-  <!-- LISTING OF DRIVERS -->
-  <div class="drivers">
-    <!-- Drivers rendered from JavaScript-->
-  </div>
-
-    <!-- <div class="drivers md:-mx-4 mt-8 flex flex-wrap"></div> -->
-    <!-- <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Alec Atlas</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
-            </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
+      <div class="w-1/3 flex">
+        
+        <!-- RIDER LOGIN/SIGNUP BUTTON/LINK-->
+        <div class="w-1/2">
+          <button class="block text-white bg-yellow-500 rounded px-4 py-2">
+            <a href="rider_login_signup.html" class="mx-auto container">
+              <span>Rider Sign-in</span>
+            </a>
+          </button>
         </div>
+
+        <!-- DRIVER SIGNUP BUTTON/LINK -->
+        <div class="w-1/2">
+          <button class="block text-white bg-yellow-500 rounded px-4 py-2">
+            <a href="driver_signup.html" class="mx-auto container">
+              <span>Driver Sign-up</span>
+            </a>
+          </button>
+        </div>
+
       </div>
 
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Alec</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
-            </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
-        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="mt-8 flex flex-wrap">
+      <div class="border p-4 w-full font-bold text-yellow-500">
+          Welcome to Golden! 
+      </div>
+    </div>
+
+    <div class="mt-8 mb-8 md:flex md:flex-wrap">
+      <div class="border md:p-4 w-full">
+        Who are we? We are the Uber for old people!
+      </div>
+    </div>
+
+    <!-- DRIVERS START -->
+    <div class="mt-8 mb-8 md:flex md:flex-wrap">
+      <div class="border bg-yellow-500 md:p-4 w-full text-white">
+        Some of our drivers:
       </div>
 
+      <!-- DRIVER 1 START -->
       <div class="p-4 w-full md:w-1/2 lg:w-1/3">
         <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Atlas</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
+            <h2 class="text-lg font-bold mb-2">Tony Zhu</h2>
+            <div class="mb-4"><img src="https://images.unsplash.com/flagged/photo-1573157448738-3da0cc9c790d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
           </div>
             <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
+              St. Louis, MO
             </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
+          <div class="mt-auto text-yellow-500 text-2xl">$35/hour</div>
         </div>
-      </div> -->
-    <!-- </div> -->
+      </div>
+      <!-- DRIVER 1 END -->
+
+      <!-- DRIVER 2 START -->
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+            <h2 class="text-lg font-bold mb-2">Hari Uggini</h2>
+            <div class="mb-4"><img src="https://images.unsplash.com/photo-1492681290082-e932832941e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80">
+          </div>
+            <div class="mb-4 text-gray-900">
+              Houston, TX
+            </div>
+          <div class="mt-auto text-yellow-500 text-2xl">$30/hour</div>
+        </div>
+      </div>
+      <!-- DRIVER 2 END -->
+
+      <!-- DRIVER 3 START -->
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+            <h2 class="text-lg font-bold mb-2">Alec Atlas</h2>
+            <div class="mb-4"><img src="https://images.unsplash.com/photo-1499146506023-dd456c2c9aa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+          </div>
+            <div class="mb-4 text-gray-900">
+              Lincoln Park, Chicago, IL
+            </div>
+          <div class="mt-auto text-yellow-500 text-2xl">$25/hour</div>
+        </div>
+      </div>
+      <!-- DRIVER 3 END -->
+
+    <!--DRIVERS END-->
+    </div>
 
     <!-- Put the Firebase config here -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
