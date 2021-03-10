@@ -9,129 +9,173 @@
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
-<body class="mx-auto container">
-    <div class="sign-in-or-sign-out"></div>
+<body class="mx-auto container bg-yellow-50">
+  <div class="sign-in-or-sign-out"></div>
 
-    <!-- HEADER -->
-    <div class= "border flex mt-4">
+  <!-- HEADER -->
+  <div class="flex mt-4">
 
-      <div class="w-2/3 text-xl py-2 px-2">
-        <a href="index.html" class="mx-auto container">
-          <span class="font-bold text-yellow-500">GOLDEN</span>
-        </a>
+    <div class="w-3/4">
+      <a href="index.html" class="mx-auto container">
+        <span class="text-4xl font-bold text-yellow-500">GOLDEN</span>
+      </a>
+    </div>
+
+
+    <div class="w-1/4 flex">
+
+      <!-- RIDER LOGIN/SIGNUP BUTTON/LINK-->
+      <div class="w-1/2">
+        <button class="block text-white bg-yellow-500 rounded px-4 py-2 font-bold uppercase">
+          <a href="rider_login_signup.html" class="mx-auto container">
+            <span>Rider Sign-in</span>
+          </a>
+        </button>
       </div>
-    
 
-      <div class="w-1/3 flex">
-        
-        <!-- RIDER LOGIN/SIGNUP BUTTON/LINK-->
-        <div class="w-1/2">
-          <button class="block text-white bg-yellow-500 rounded px-4 py-2">
-            <a href="rider_login_signup.html" class="mx-auto container">
-              <span>Rider Sign-in</span>
-            </a>
-          </button>
-        </div>
-
-        <!-- DRIVER SIGNUP BUTTON/LINK -->
-        <div class="w-1/2">
-          <button class="block text-white bg-yellow-500 rounded px-4 py-2">
-            <a href="driver_signup.html" class="mx-auto container">
-              <span>Driver Sign-up</span>
-            </a>
-          </button>
-        </div>
-
+      <!-- DRIVER SIGNUP BUTTON/LINK -->
+      <div class="w-1/2">
+        <button class="block text-white bg-yellow-500 rounded px-4 py-2 font-bold uppercase">
+          <a href="driver_signup.html" class="mx-auto container">
+            <span>Driver Sign-up</span>
+          </a>
+        </button>
       </div>
 
     </div>
 
-    <!-- BODY -->
-    <div class="mt-8 flex flex-wrap">
-      <div class="border p-4 w-full font-bold text-yellow-500">
-          Welcome to Golden! 
-      </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="mt-8 flex flex-wrap">
+    <div class="w-full font-bold text-yellow-500 text-3xl">
+      Welcome to Golden!
+    </div>
+  </div>
+
+  <div class="mt-2 mb-8 flex flex-wrap text-xl">
+    <div class="w-full">
+      Golden is a door-through-door transportation service tailored to the specific needs of olders adults. Book a ride
+      by signing in above or
+      by calling us at 847-962-6839.
+    </div>
+  </div>
+
+  <div class="mt-8 flex flex-wrap">
+    <div class="w-full font-bold text-yellow-500 text-3xl">
+      Tell me more
+    </div>
+  </div>
+
+  <div class="mt-2 mb-8 flex flex-wrap text-xl">
+    <div class="w-full">
+      Golden's mission is to increase the quality of life of older adults by providing safe, easy-to-use, and
+      customizable transportation. Each rider is unique and our drivers are trained to provide high-touch services to
+      ensure you safely get to where you need to go.
+    </div>
+  </div>
+
+  <div class="mt-8 flex flex-wrap">
+    <div class="w-full font-bold text-yellow-500 text-3xl">
+      Riding with Golden is different
+    </div>
+  </div>
+
+  <div class="mt-2 mb-8 flex flex-wrap text-xl">
+    <div class="w-full">
+      Here at Golden, we focus on building relationships and forming meaningful connections with our riders. Getting
+      into a strangers car can be
+      anxiety inducing. Golden offers increased transparency into each driver BEFORE you book a ride, allowing you to
+      book a ride with a driver you are most comfortable with.
+      Although all of drivers have been vetted and expertly trained, we encourage you to ride with a Golden driver
+      you've formed a connection with.
+    </div>
+    <div class="w-full mt-2">
+      We also recognize some of our riders may need extra help. Golden is a door-through-door transportation service,
+      which means we make sure each rider
+      safely gets in and out of their residence, the car, and their destination. Lean on Golden for that extra support
+      you may need.
+    </div>
+    <div class="w-full mt-2">
+      Safety is important to us. We require each driver to list an emergency contact and, if requested, we will send
+      ride notifications to this
+      contact so friends and family know their loved ones are safe.
+    </div>
+  </div>
+
+  <!-- DRIVERS START -->
+  <div class="mt-8 mb-8 md:flex md:flex-wrap">
+    <div class="bg-yellow-500 p-2 w-full text-white text-center font-bold text-4xl rounded">
+      Best in class drivers only drive for Golden
     </div>
 
-    <div class="mt-8 mb-8 md:flex md:flex-wrap">
-      <div class="border md:p-4 w-full">
-        Who are we? We are the Uber for old people!
+    <!-- DRIVER 1 START -->
+    <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+      <div class="border-2 border-yellow-500 h-full p-4 flex flex-col bg-gray-50">
+        <h2 class="text-lg font-bold mb-2">Tony Z.</h2>
+        <img class="mb-4 w-96 h-64"
+          src="https://images.unsplash.com/flagged/photo-1573157448738-3da0cc9c790d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"></img>
+        <div class="mb-4 text-gray-900">
+          St. Louis, MO
+        </div>
+        <div class="mt-auto text-yellow-500 text-2xl font-bold">$35/hour</div>
       </div>
     </div>
+    <!-- DRIVER 1 END -->
 
-    <!-- DRIVERS START -->
-    <div class="mt-8 mb-8 md:flex md:flex-wrap">
-      <div class="border bg-yellow-500 md:p-4 w-full text-white">
-        Some of our drivers:
-      </div>
-
-      <!-- DRIVER 1 START -->
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-2">Tony Zhu</h2>
-            <div class="mb-4"><img src="https://images.unsplash.com/flagged/photo-1573157448738-3da0cc9c790d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
-          </div>
-            <div class="mb-4 text-gray-900">
-              St. Louis, MO
-            </div>
-          <div class="mt-auto text-yellow-500 text-2xl">$35/hour</div>
+    <!-- DRIVER 2 START -->
+    <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+      <div class="border-2 border-yellow-500 h-full p-4 flex flex-col bg-gray-50">
+        <h2 class="text-lg font-bold mb-2">Hari U.</h2>
+        <img class="mb-4 w-96 h-64"
+          src="https://images.unsplash.com/flagged/photo-1573157448738-3da0cc9c790d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"></img>
+        <div class="mb-4 text-gray-900">
+          Houston, TX
         </div>
+        <div class="mt-auto text-yellow-500 text-2xl font-bold">$30/hour</div>
       </div>
-      <!-- DRIVER 1 END -->
+    </div>
+    <!-- DRIVER 2 END -->
 
-      <!-- DRIVER 2 START -->
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-2">Hari Uggini</h2>
-            <div class="mb-4"><img src="https://images.unsplash.com/photo-1492681290082-e932832941e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Houston, TX
-            </div>
-          <div class="mt-auto text-yellow-500 text-2xl">$30/hour</div>
+    <!-- DRIVER 3 START -->
+    <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+      <div class="border-2 border-yellow-500 h-full p-4 flex flex-col bg-gray-50">
+        <h2 class="text-lg font-bold mb-2">Alec A.</h2>
+        <img class="mb-4 w-96 h-64"
+          src="https://images.unsplash.com/flagged/photo-1573157448738-3da0cc9c790d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"></img>
+        <div class="mb-4 text-gray-900">
+          Lincoln Park, Chicago, IL
         </div>
+        <div class="mt-auto text-yellow-500 text-2xl font-bold">$25/hour</div>
       </div>
-      <!-- DRIVER 2 END -->
-
-      <!-- DRIVER 3 START -->
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-2">Alec Atlas</h2>
-            <div class="mb-4"><img src="https://images.unsplash.com/photo-1499146506023-dd456c2c9aa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Lincoln Park, Chicago, IL
-            </div>
-          <div class="mt-auto text-yellow-500 text-2xl">$25/hour</div>
-        </div>
-      </div>
-      <!-- DRIVER 3 END -->
+    </div>
+    <!-- DRIVER 3 END -->
 
     <!--DRIVERS END-->
-    </div>
+  </div>
 
-    <!-- Put the Firebase config here -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <!-- Firebase Auth -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+  <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
-        authDomain: "golden-7b638.firebaseapp.com",
-        projectId: "golden-7b638",
-        storageBucket: "golden-7b638.appspot.com",
-        messagingSenderId: "738520258548",
-        appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
-      } // replace
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+      authDomain: "golden-7b638.firebaseapp.com",
+      projectId: "golden-7b638",
+      storageBucket: "golden-7b638.appspot.com",
+      messagingSenderId: "738520258548",
+      appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+    } // replace
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="golden.js"></script>
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="golden.js"></script>
 </body>
 
 </html>
