@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Driver Sign-Up</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
+
 <body>
-    
+    <div>
+        <h1 class="text-xl py-4 px-8">
+            <a href="index.html" class="mx-auto container">
+                <span class="font-bold text-yellow-500">GOLDEN</span>
+            </a>
+        </h1>
+    </div>
+    <div>
+        <h1 class = "pt-4 pb-2 px-8 w-1/2 mx-auto">
+            Thank you for your interest in becoming a driver for Golden!
+        </h1>
+        <h1 class = "px-8 pb-4 w-1/2 mx-auto">
+            Please complete the form below and we will contact you with next steps.
+        </h1>
+    </div>
+    <div>
+        <!-- Need to add dynamic styling here -->
+        <form action = "driver_signup_submission.html" class = "px-8 w-1/3 mx-auto">
+            
+            <label for="name" class="block mx-auto">Name:</label>
+            <input type="text" id="name" name="name" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+            
+            <label for="email" class="block">Email:</label>
+            <input type="email" id="email" name="email" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+
+            <label for="phone" class="block">Phone number:</label>
+            <input type="text" id="phone" name="phone" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+        
+            <label for="age" class="block">Age:</label>
+            <input type="number" id="age" name="age" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+            
+            <label for="location" class="block">Location:</label>
+            <input type="text" id="location" name="location" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+            
+            <label for="profilePicUrl" class="block">Profile Picture URL:</label>
+            <input type="url" id="profilePicUrl" name="profilePicUrl" class="block w-full mx-auto border border-gray-300 focus:outline-none" >
+
+            <button class="block mt-4 bg-yellow-500 text-white px-4 py-2 rounded mx-auto">Submit form</button>
+        </form>
+    </div>
+    <script src="driver_signup.js"></script>
 </body>
+
 </html>
