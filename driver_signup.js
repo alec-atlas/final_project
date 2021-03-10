@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     let driverAge = document.querySelector('#age').value
     let driverLocation = document.querySelector('#location').value
     let driverProfilePicUrl = document.querySelector('#profilePicUrl').value
-    let driverRate = document.querySelector('#rate').value
+    let driverFee = document.querySelector('#fee').value
 
     await fetch('/.netlify/functions/create_driver', {
         method: 'POST',
@@ -16,7 +16,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
             age: driverAge,
             location: driverLocation,
             profilePicUrl: driverProfilePicUrl,
-            rate: driverRate
+            fee: driverFee
         })
     })
 })
