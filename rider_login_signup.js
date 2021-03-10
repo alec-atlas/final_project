@@ -34,7 +34,7 @@ firebase.auth().onAuthStateChanged(async function(user)  {
           signInSuccessUrl: 'dashboard.html'
         }
     
-        // Starts FirebaseUI Auth
+    //     // Starts FirebaseUI Auth
         ui.start('.sign-in-or-sign-out', authUIConfig)
     }
   
