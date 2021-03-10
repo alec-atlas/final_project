@@ -10,6 +10,7 @@ exports.handler = async function(event) {
     let driverAge = driver.age
     let driverLocation = driver.location
     let driverProfilePicUrl = driver.profilePicUrl
+    let driverRate = driver.rate
 
     let newDriver = {
         name: driverName,
@@ -17,7 +18,8 @@ exports.handler = async function(event) {
         cellphone_number: driverPhone,
         age: driverAge,
         location: driverLocation,
-        profilepic: driverProfilePicUrl
+        profilepic: driverProfilePicUrl,
+        rate: driverRate
     }
 
     let docref = await db.collection('drivers').add(newDriver)
