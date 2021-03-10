@@ -1,5 +1,4 @@
 document.querySelector('form').addEventListener('submit', async function(event) {
-    event.preventDefault()
     let driverName = document.querySelector('#name').value
     let driverEmail = document.querySelector('#email').value
     let driverPhone = document.querySelector('#phone').value
