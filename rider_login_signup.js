@@ -20,6 +20,8 @@ firebase.auth().onAuthStateChanged(async function(user)  {
         document.location.href = 'index.html'
       })
 
+      window.location.href = 'dashboard.html'
+
     } else {
       console.log('no user')
       
