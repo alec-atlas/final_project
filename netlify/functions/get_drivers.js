@@ -17,7 +17,8 @@ exports.handler = async function (event) {
             name: driverData.name,
             email: driverData.email,
             fee: driverData.fee,
-            profilePicUrl: driverData.profilepic
+            profilePicUrl: driverData.profilepic,
+            location: driverData.location
         })
     }
 
