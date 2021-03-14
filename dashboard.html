@@ -9,102 +9,44 @@
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
-<body>
-  <div class="mx-auto container">
-    <div class="sign-in-or-sign-out"></div>
+<body class="mx-auto px-8 container bg-yellow-50">
+  <div class="sign-in-or-sign-out"></div>
 
-    <!-- HEADER -->
-    <div>
-      <h1 class="text-xl py-4 px-8">
-        <a href="index.html" class="mx-auto container">
-          <span class="font-bold text-yellow-500">GOLDEN</span>
-        </a>
-      </h1>
-    </div>
-
-    <!-- LISTING OF DRIVERS -->
-    <div class="drivers"></div>
-    <div>
-      <h1 class="text-xl py-4 px-8">
-        <a href="rider_login_signup.html" class="mx-auto container">
-          <span class="font-bold text-blue-500">Rider Sign-in</span>
-        </a>
-      </h1>
-    </div>
-
-    <div>
-      <h1 class="text-xl py-4 px-8">
-        <a href="driver_signup.html" class="mx-auto container">
-          <span class="font-bold text-green-500">Driver Sign-up</span>
-        </a>
-      </h1>
-    </div>
-
-  <!-- LISTING OF DRIVERS -->
-  <div class="drivers">
-    <!-- Drivers rendered from JavaScript-->
+  <!-- HEADER -->
+  <div class="md:w-3/4">
+    <a href="index.html" class="mx-auto container">
+      <span class="text-4xl font-bold text-yellow-500">GOLDEN</span>
+    </a>
   </div>
 
-    <!-- <div class="drivers md:-mx-4 mt-8 flex flex-wrap"></div> -->
-    <!-- <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Alec Atlas</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
-            </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
-        </div>
-      </div>
+  <div class="p-4">
+    <div class="drivers flex flex-wrap">
+      <!-- Drivers rendered from JavaScript-->
+    </div>
+  </div>
 
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Alec</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
-            </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
-        </div>
-      </div>
+  <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
 
-      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
-        <div class="border h-full p-4 flex flex-col">
-            <h2 class="text-lg font-bold mb-4">Atlas</h2>
-            <div class="mb-4"><img src="alec_profile_DELETE.jpg">
-          </div>
-            <div class="mb-4 text-gray-900">
-              Best driver in Chicago!
-            </div>
-          <div class="mt-auto text-purple-500 text-2xl">$25/hour</div>
-        </div>
-      </div> -->
-    <!-- </div> -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+      authDomain: "golden-7b638.firebaseapp.com",
+      projectId: "golden-7b638",
+      storageBucket: "golden-7b638.appspot.com",
+      messagingSenderId: "738520258548",
+      appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+    } // replace
 
-    <!-- Put the Firebase config here -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <!-- Firebase Auth -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
-        authDomain: "golden-7b638.firebaseapp.com",
-        projectId: "golden-7b638",
-        storageBucket: "golden-7b638.appspot.com",
-        messagingSenderId: "738520258548",
-        appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
-      } // replace
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="dashboard.js"></script>
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="dashboard.js"></script>
 </body>
 
 </html>

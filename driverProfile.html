@@ -10,18 +10,63 @@
 </head>
 
 <body>
+    <div class="sign-in-or-sign-out"></div>
     <div class="mx-auto container">
-
-        <!-- HEADER -->
-        <div>
-            <h1 class="text-xl py-4 px-8">
-                <a href="index.html" class="mx-auto container">
-                    <span class="font-bold text-yellow-500">GOLDEN</span>
-                </a>
-            </h1>
-        </div>
-
-        <!-- DRIVER PROFILE -->
-         <div class = "driverProfile"></div>
-         
+        <h1 class="text-xl py-4 px-8">
+            <a href="index.html" class="mx-auto container">
+                <span class="font-bold text-yellow-500">GOLDEN</span>
+            </a>
+        </h1>
     </div>
+    <div class="driverProfile"></div>
+    <div class="w-full md:w-1/2 mx-auto text-center">
+        <h1 class="px-8 pb-8">
+            Want to book this driver? Please complete the form below and we will schedule the booking.
+        </h1>
+    </div>
+    <div>
+        <form action="driver_signup_submission.html" class="px-8 w-full mx-auto md:w-1/2">
+
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date"
+                class="mt-2 mb-4 w-full mx-auto border border-gray-300 focus:outline-none">
+
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time"
+                class="mt-2 mb-4 w-full mx-auto border border-gray-300 focus:outline-none">
+
+            <label for="pickup">Pickup Address:</label>
+            <input type="text" id="pickup" name="pickup"
+                class="mt-2 mb-4 w-full mx-auto border border-gray-300 focus:outline-none">
+
+            <label for="dropoff">Dropoff Address:</label>
+            <input type="text" id="dropoff" name="dropoff"
+                class="mt-2 mb-4 w-full mx-auto border border-gray-300 focus:outline-none">
+
+            <button class="block mt-4 bg-yellow-500 text-white px-4 py-2 rounded mx-auto">Submit booking
+                request</button>
+        </form>
+    </div>
+    <!-- Put the Firebase config here -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+            authDomain: "golden-7b638.firebaseapp.com",
+            projectId: "golden-7b638",
+            storageBucket: "golden-7b638.appspot.com",
+            messagingSenderId: "738520258548",
+            appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+        } // replace
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="driverProfile.js"></script>
+</body>
