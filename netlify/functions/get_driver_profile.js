@@ -1,11 +1,13 @@
 let firebase = require('./firebase')
 
 exports.handler = async function(event) {
-    let queryStringDriverId = event.queryStringParameters.driverId
+    let db = firebase.firestore()
+    let driverId = event.queryStringParameters.driverId
     let driverProfileData = []
-    let driverProfile = await db.collection('drivers')
-                                .doc(queryStringDriverId)
+    let querySnapshot = await db.collection('drivers')
+                                .where('driverId', '==', driverId)
                                 .get()
+    let driverProfile = querySnapshot.docs
     driverProfileData.push({
         name: driverProfile.name,
         phone: driverProfile.cellphone_number,
