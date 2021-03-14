@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="sign-in-or-sign-out"></div>
     <div class="mx-auto container">
         <h1 class="text-xl py-4 px-8">
             <a href="index.html" class="mx-auto container">
@@ -42,8 +43,30 @@
             <input type="text" id="dropoff" name="dropoff"
                 class="mt-2 mb-4 w-full mx-auto border border-gray-300 focus:outline-none">
 
-            <button class="block mt-4 bg-yellow-500 text-white px-4 py-2 rounded mx-auto">Submit booking request</button>
+            <button class="block mt-4 bg-yellow-500 text-white px-4 py-2 rounded mx-auto">Submit booking
+                request</button>
         </form>
     </div>
+    <!-- Put the Firebase config here -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+            authDomain: "golden-7b638.firebaseapp.com",
+            projectId: "golden-7b638",
+            storageBucket: "golden-7b638.appspot.com",
+            messagingSenderId: "738520258548",
+            appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+        } // replace
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="driverProfile.js"></script>
 </body>
