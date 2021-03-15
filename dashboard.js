@@ -48,7 +48,7 @@ async function renderDriver(driver) {
     <div class=".driver-${driver.id} p-4 md:w-1/3">
       <div class="border-2 border-yellow-500 md:h-104 p-4 flex flex-col bg-gray-50">
           <h2 class="text-lg font-bold mb-2">${driver.name}</h2>
-          <h1 class="italic mb-4">${driver.location}</h1>
+          <h1 class="italic mb-4">`${driver.city},${driver.state}`</h1>
           <div class="mb-4"><img class="object-contain h-64 w-full object-center" src="${driver.profilePicUrl}">
         </div>
           <div class="mb-4 text-gray-900">
