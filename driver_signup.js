@@ -6,7 +6,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     let driverLocation = document.querySelector('#location').value
     let driverProfilePicUrl = document.querySelector('#profilePicUrl').value
     let driverFee = document.querySelector('#fee').value   
-    let driverFunFact = document.querySelector('#fun_fact').value
+    let driverFunFact = document.querySelector('#funfact').value
     let driverDescription = document.querySelector('#description').value
     let driverCounty = document.querySelector('#county').value
     let driverCity = document.querySelector('#city').value
