@@ -18,7 +18,13 @@ exports.handler = async function (event) {
             email: driverData.email,
             fee: driverData.fee,
             profilePicUrl: driverData.profilepic,
-            location: driverData.location
+            address: driverData.location,
+            phone: driverData.cellphone_number,
+            city: driverData.city,
+            county: driverData.county,
+            zip: driverData.zip,
+            bio: driverData.description,
+            funFact: driverData.funfact
         })
     }
 

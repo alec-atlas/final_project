@@ -16,8 +16,9 @@ exports.handler = async function(event) {
         fee: driverProfile.fee,
         profilePicUrl: driverProfile.profilepic,
         location: driverProfile.location,
-        age: driverProfile.age
-        //add more profile items here
+        age: driverProfile.age,
+        bio: driverProfile.description,
+        funFact: driverProfile.funfact
     }
 
     return {

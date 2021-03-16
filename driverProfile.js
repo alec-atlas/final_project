@@ -78,10 +78,13 @@ async function renderDriverProfile(driver) {
                 <div class="md:p-4 md:flex">
                     <div class="md:w-1/2 p-2"><img src="${driver.profilepic}"></div>
                     <div class="md:w-1/2 p-2">
-                        <div class="text-2xl font-bold text-gray-900">About Driver:</div>
+                        <div class="text-2xl font-bold text-gray-900">Driver Info:</div>
                             <ul class="list-disc ml-6">
                                 <li>Age: ${driver.age}</li>
                                 <li>Location: ${driver.location}</li>
+                                <li>About Me: ${driver.description}</li>
+                                <li>Fun Fact: ${driver.funFact}</li>
+                                <li>Contact Me: ${driver.phone}</li>
                             </ul>  
                     </div>
                 </div>  
