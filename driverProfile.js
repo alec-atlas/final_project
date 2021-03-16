@@ -9,12 +9,14 @@ firebase.auth().onAuthStateChanged(async function (user) {
         renderDriverProfile(driver)
 
         document.querySelector('form').addEventListener('submit', async function (event) {
+    
             let requestDate = document.querySelector('#date').value
             let requestTime = document.querySelector('#time').value
             let requestPickup = document.querySelector('#pickup').value
             let requestDropoff = document.querySelector('#dropoff').value
-            let requestRiderId = ""
-            let requestDriverId = ""
+            let requestRiderId = user.uid
+
+            console.log(requestDate)
         
             await fetch('/.netlify/functions/create_booking', {
                 method: 'POST',
@@ -24,10 +26,11 @@ firebase.auth().onAuthStateChanged(async function (user) {
                     pickup: requestPickup,
                     dropoff: requestDropoff,
                     rider: requestRiderId,
-                    driver: requestDriverId
+                    driver: driverId
                 })
             })
         })
+
         document.querySelector('.sign-in-or-sign-out').innerHTML = `
                 <button class="text-pink-500 underline sign-out">Sign Out</button>
             `
