@@ -8,6 +8,26 @@ firebase.auth().onAuthStateChanged(async function (user) {
         console.log(driver)
         renderDriverProfile(driver)
 
+        document.querySelector('form').addEventListener('submit', async function (event) {
+            let requestDate = document.querySelector('#date').value
+            let requestTime = document.querySelector('#time').value
+            let requestPickup = document.querySelector('#pickup').value
+            let requestDropoff = document.querySelector('#dropoff').value
+            let requestRiderId = ""
+            let requestDriverId = ""
+        
+            await fetch('/.netlify/functions/create_booking', {
+                method: 'POST',
+                body: JSON.stringify({
+                    date: requestDate,
+                    time: requestTime,
+                    pickup: requestPickup,
+                    dropoff: requestDropoff,
+                    rider: requestRiderId,
+                    driver: requestDriverId
+                })
+            })
+        })
         document.querySelector('.sign-in-or-sign-out').innerHTML = `
                 <button class="text-pink-500 underline sign-out">Sign Out</button>
             `
@@ -46,9 +66,6 @@ async function renderDriverProfile(driver) {
                         <span class="text-4xl w-1/2">${driver.name}</span>
                         <p class="mt-auto text-yellow-500 text-2xl text-right w-1/2">$${driver.fee}/hour</p>
                     </h2>  
-                    <div class="justify-end flex mb-4">
-                        <button class="block mt-4 text-white bg-yellow-500 rounded px-4 py-2">Book a ride!</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -70,26 +87,6 @@ async function renderDriverProfile(driver) {
     `)
 }
 
-document.querySelector('form').addEventListener('submit', async function (event) {
-    let requestDate = document.querySelector('#date').value
-    let requestTime = document.querySelector('#time').value
-    let requestPickup = document.querySelector('#pickup').value
-    let requestDropoff = document.querySelector('#dropoff').value
-    let requestRiderId = []
-    let requestDriverId = []
-
-    await fetch('/.netlify/functions/create_booking', {
-        method: 'POST',
-        body: JSON.stringify({
-            date: requestDate,
-            time: requestTime,
-            pickup: requestPickup,
-            dropoff: requestDropoff,
-            rider: requestRiderId,
-            driver: requestDriverId
-        })
-    })
-})
 // DRIVER PROFILE
 // document.querySelector('.driverProfile').insertAdjacentHTML('beforeend', `
 //         <div class="mt-8 flex flex-wrap">
