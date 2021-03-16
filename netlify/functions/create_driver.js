@@ -11,6 +11,12 @@ exports.handler = async function(event) {
     let driverLocation = driver.location
     let driverProfilePicUrl = driver.profilePicUrl
     let driverFee = driver.fee
+    let driverFunFact = driver.funfact 
+    let driverDescription = driver.description
+    let driverCounty = driver.county
+    let driverCity = driver.city
+    let driverState= driver.state
+    let driverZip = driver.zip
 
     let newDriver = {
         name: driverName,
@@ -19,7 +25,14 @@ exports.handler = async function(event) {
         age: driverAge,
         location: driverLocation,
         profilepic: driverProfilePicUrl,
-        fee: driverFee
+        fee: driverFee,
+        funfact: driverFunFact,
+        description: driverDescription,
+        county: driverCounty,
+        city: driverCity,
+        state: driverState,
+        zip: driverZip,
+        created: firebase.firestore.FieldValue.serverTimestamp()
     }
 
     let docref = await db.collection('drivers').add(newDriver)
