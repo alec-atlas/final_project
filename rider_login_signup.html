@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,52 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
-<body>
+
+<body class="mx-auto px-8 mt-8 container bg-yellow-50">
+  <div class="lg:w-3/4">
+    <a href="index.html" class="mx-auto container">
+      <span class="text-4xl font-bold text-yellow-500">GOLDEN</span>
+    </a>
+  </div>
   <div>
-      <div class="sign-in-or-sign-out pt-4 px-16 text-white text-center"></div>
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
-  <script>
-    var firebaseConfig = {apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
-    authDomain: "golden-7b638.firebaseapp.com",
-    projectId: "golden-7b638",
-    storageBucket: "golden-7b638.appspot.com",
-    messagingSenderId: "738520258548",
-    appId: "1:738520258548:web:6685a0996da9f6509e4ba1"}
-    firebase.initializeApp(firebaseConfig);
-  </script>
+    <div class="sign-in-or-sign-out pt-4 px-16 text-white text-center"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+        authDomain: "golden-7b638.firebaseapp.com",
+        projectId: "golden-7b638",
+        storageBucket: "golden-7b638.appspot.com",
+        messagingSenderId: "738520258548",
+        appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+      }
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </div>
 
-  
-  <div >
-          <h3 class="text-xl font-medium leading-6 text-yellow-500 py-4 px-8">Why Ride with Golden?</h3>
-              <p class="m-4 text-2xl text-gray-600">
-                    <ol class="m-8">  
-                        <li><h3 class ="m-4">✅ &nbsp; Golden understands Senior needs</h3></li>  
-                        <li><h3 class ="m-4">✅ &nbsp; Safety is #1 priority</h3></li>  
-                        <li><h3 class ="m-4">✅ &nbsp; Door to Door Service</h3></li>
-                    </ol>
-                    <h2 class="text-lg font-medium leading-6 text-gray-900 py-4 px-8"> Thank you for Signing up, we are excited to serve you!</h2>
-              </p>
+
+  <div>
+    <h3 class="text-3xl font-medium leading-6 text-yellow-500 py-auto px-auto mt-16">Why Ride with Golden?</h3>
+    <p class="m-4 text-gray-600">
+    <ol class="m-8">
+      <li>
+        <h3 class="m-4 text-2xl">✅ &nbsp; Each ride is tailored to your specific needs</h3>
+      </li>
+      <li>
+        <h3 class="m-4 text-2xl">✅ &nbsp; Safety is our #1 priority</h3>
+      </li>
+      <li>
+        <h3 class="m-4 text-2xl">✅ &nbsp; Door-through-Door Service</h3>
+      </li>
+    </ol>
+    <h2 class="text-xl font-medium text-gray-900 py-auto px-auto mt-8"> Thank you for riding with Golden - we can't wait to meet you!</h2>
+    </p>
   </div>
 
   <script src="rider_login_signup.js"></script>
 </body>
+
 </html>
