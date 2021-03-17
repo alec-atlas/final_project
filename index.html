@@ -103,50 +103,51 @@
     </div>
 
     <div class="md:w-1/2">
-      <div class="font-bold text-yellow-500 text-3xl mb-2">
+      <div class="font-bold text-yellow-500 text-3xl mb-2 w-full">
         Our mission
       </div>
-      <div class="text-2xl">
-        <div class="p-2 flex-wrap">
-          Golden's mission is to increase the quality of life of older adults by providing safe, easy-to-use, and customizable transportation.
-          Each rider is unique and our drivers are trained to provide high-touch services to ensure you safely get to where you need to go.
-        </div>
-      </div>
+      <p class="text-2xl w-full p-2 mb-2 break-words">
+        Golden's mission is to increase the quality of life of older adults by providing safe, easy-to-use, and
+        customizable transportation.
+      </p>
+      <p class="text-2xl w-full p-2 break-words">
+        Each rider is unique and our drivers are trained to provide high-touch services to
+        ensure you safely get to where you need to go.
+      </p>
     </div>
   </div>
 
+  <!-- DRIVERS START -->
+  <!-- <div class="mt-8 mb-8 md:flex md:flex-wrap"> -->
+  <div
+    class="bg-gray-50 border-yellow-500 border-2 p-4 mt-12 mb-4 w-full text-yellow-500 text-center font-bold text-4xl rounded">
+    Golden lists only the best drivers, some of them are below!
+  </div>
 
-    <!-- DRIVERS START -->
-    <!-- <div class="mt-8 mb-8 md:flex md:flex-wrap"> -->
-    <div
-      class="bg-gray-50 border-yellow-500 border-2 p-4 mt-12 mb-4 w-full text-yellow-500 text-center font-bold text-4xl rounded">
-      Golden lists only the best drivers, some of them are below!
-    </div>
+  <div class="drivers flex flex-wrap"></div>
 
-    <div class="drivers flex flex-wrap"></div>
+  <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
 
-    <!-- Put the Firebase config here -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <!-- Firebase Auth -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
+      authDomain: "golden-7b638.firebaseapp.com",
+      projectId: "golden-7b638",
+      storageBucket: "golden-7b638.appspot.com",
+      messagingSenderId: "738520258548",
+      appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
+    } // replace
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBJyg2JvNfwUe7FR9ZrVQCCmhQEnpzt170",
-        authDomain: "golden-7b638.firebaseapp.com",
-        projectId: "golden-7b638",
-        storageBucket: "golden-7b638.appspot.com",
-        messagingSenderId: "738520258548",
-        appId: "1:738520258548:web:6685a0996da9f6509e4ba1"
-      } // replace
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="golden.js"></script>
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="golden.js"></script>
 </body>
 
 </html>
