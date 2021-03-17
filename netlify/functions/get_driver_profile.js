@@ -18,6 +18,7 @@ exports.handler = async function(event) {
         location: driverProfile.location,
         age: driverProfile.age,
         bio: driverProfile.description,
+        state: driverProfile.state,
         funFact: driverProfile.funfact
     }
 
