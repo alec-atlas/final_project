@@ -82,7 +82,7 @@ async function renderDriverProfile(driver) {
                             <ul class="list-disc ml-6">
                                 <li>Age: ${driver.age}</li>
                                 <li>Location: ${driver.location}</li>
-                                <li>About Me: ${driver.description}</li>
+                                <li>About Me: ${driver.bio}</li>
                                 <li>Fun Fact: ${driver.funFact}</li>
                                 <li>Contact Me: ${driver.phone}</li>
                             </ul>  
