@@ -24,6 +24,7 @@ exports.handler = async function (event) {
             county: driverData.county,
             zip: driverData.zip,
             bio: driverData.description,
+            state: driverData.state,
             funFact: driverData.funfact
         })
     }
