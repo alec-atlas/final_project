@@ -62,7 +62,7 @@ firebase.auth().onAuthStateChanged(async function (user) {
 
 async function renderDriverProfile(driver) {
     document.querySelector('.driverProfile').insertAdjacentHTML('beforeend', `
-        <div class="mt-8 flex flex-wrap">
+        <div class="mt-8 w-3/4 md:w-1/2 mx-auto flex flex-wrap">
             <div class="border p-4 w-full">
                 <div class="h-full p-4 flex flex-col">
                     <h2 class="font-bold mb-1 flex justify-start">
@@ -73,10 +73,10 @@ async function renderDriverProfile(driver) {
             </div>
         </div>
 
-        <div class="mt-8 mb-8 md:flex md:flex-wrap">
-            <div class="border md:p-4 w-full">
-                <div class="md:p-4 md:flex">
-                    <div class="md:w-1/2 p-2"><img src="${driver.profilepic}"></div>
+        <div class="my-8 w-1/2 mx-auto md:flex md:flex-wrap">
+            <div class="border container mx-auto md:p-4 w-full">
+                <div class="p-4 md:p-2 md:flex">
+                    <div class="md:w-1/2 p-2"><img src="${driver.profilePicUrl}"></div>
                     <div class="md:w-1/2 p-2">
                         <div class="text-2xl font-bold text-gray-900">Driver Info:</div>
                             <ul class="list-disc ml-6">
