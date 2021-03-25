@@ -2,137 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Sign-Up</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Sign-Up</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
-<body class ="mx-auto px-8 container bg-yellow-50">
-    <div>
-        <h1 class="text-xl py-4 px-8">
-            <a href="index.html" class="mx-auto container">
-                <span class="font-bold text-yellow-500">GOLDEN</span>
-            </a>
-        </h1>
+<body class="mx-auto px-8 container bg-yellow-50">
+  <div>
+    <h1 class="text-xl py-4 px-8">
+      <a href="index.html" class="mx-auto container">
+        <span class="font-bold text-yellow-500">GOLDEN</span>
+      </a>
+    </h1>
+  </div>
+  <div class="hidden sm:block" aria-hidden="true">
+    <div class="py-5">
+      <div class="border-t border-gray-200"></div>
     </div>
-    <div class="hidden sm:block" aria-hidden="true">
-        <div class="py-5">
-          <div class="border-t border-gray-200"></div>
+  </div>
+
+  <div class="mt-10 sm:mt-0">
+    <div class="md:grid md:grid-cols-3 md:gap-6">
+      <div class="md:col-span-1">
+        <div class="sm:px-0">
+          <h3 class="text-xl font-medium leading-6 text-yellow-500 py-4 px-8">Why Drive for Golden?</h3>
+          <p class="m-4 text-2xl text-gray-600">
+          <ol class="m-8">
+            <li>
+              <h3 class="m-4">✅ &nbsp; HELP Seniors in need</h3>
+            </li>
+            <li>
+              <h3 class="m-4">✅ &nbsp; Work on your OWN time</h3>
+            </li>
+            <li>
+              <h3 class="m-4">✅ &nbsp; Get paid INSTANTLY</h3>
+            </li>
+          </ol>
+          <h2 class="text-lg font-medium leading-6 text-gray-900 py-4 px-8"> Please fill in your details and a Golden
+            Executive will be in touch with you shortly!</h2>
+          </p>
         </div>
       </div>
-      
-      <div class="mt-10 sm:mt-0">
-        <div class="md:grid md:grid-cols-3 md:gap-6">
-          <div class="md:col-span-1">
-            <div class="sm:px-0">
-              <h3 class="text-xl font-medium leading-6 text-yellow-500 py-4 px-8">Why Drive for Golden?</h3>
-              <p class="m-4 text-2xl text-gray-600">
-                    <ol class="m-8">  
-                        <li><h3 class ="m-4">✅ &nbsp; HELP Seniors in need</h3></li>  
-                        <li><h3 class ="m-4">✅ &nbsp; Work on your OWN time</h3></li>  
-                        <li><h3 class ="m-4">✅ &nbsp; Get paid INSTANTLY</h3></li>
-                    </ol>
-                    <h2 class="text-lg font-medium leading-6 text-gray-900 py-4 px-8"> Please fill in your details and a Golden Executive will be in touch with you shortly!</h2>
-              </p>
-            </div>
-          </div>
-          <div class="mt-5 md:mt-0 md:col-span-2">
-            <form action="driver_signup_submission.html">
-              <div class="shadow overflow-hidden sm:rounded-md">
-                <div class="px-4 py-5 bg-white sm:p-6">
-                  <div class="grid grid-cols-6 gap-6">
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="name" class="block text-sm font-medium text-gray-700">Name (First,Last)</label>
-                      <input type="text" name="name" id="name" autocomplete="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-4">
-                      <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
-                      <input type="text" name="email" id="email" autocomplete="email" placeholder="abc@gmail.com" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-4">
-                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
-                        <input type="text" name="phone" id="phone" autocomplete="phone_number" placeholder="123-456-7890" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
+      <form name="contact" netlify>
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+  </div>
 
-                    <div class="col-span-6 sm:col-span-3">
-                        <label for="age" class="block text-sm font-medium text-gray-700">Age (years)</label>
-                        <input type="text" name="age" id="age" autocomplete="age" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                      </div>
+  <div class="hidden sm:block" aria-hidden="true">
+    <div class="py-5">
+      <div class="border-t border-gray-200"></div>
+    </div>
+  </div>
 
-                    <div class="col-span-6 sm:col-span-3">
-                        <label for="profilePicUrl" class="block text-sm font-medium text-gray-700">Profile Picture (Url)</label>
-                        <input type="url" name="profilePicUrl" id="profilePicUrl" autocomplete="profilePicUrl" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                      </div>
-        
-                      <div class="col-span-6 sm:col-span-3">
-                        <label for="fee" class="block text-sm font-medium text-gray-700">Hourly Rate ($/hr)</label>
-                        <input type="text" name="fee" id="fee" autocomplete="fee" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                      </div>
-
- 
-
-                      <div class="col-span-6">
-                        <label for="funfact" class="block text-sm font-medium text-gray-700"> Fun fact about yourself?</label>
-                        <textarea name="funfact" id="funfact" autocomplete="funfact" rows="2" cols="50" placeholder="I love hiking" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"> </textarea>
-                      </div>
-
-                      <div class="col-span-6">
-                        <label for="description" class="block text-sm font-medium text-gray-700"> What do you want riders to know about you?</label>
-                        <textarea name="description" id="description" autocomplete="description" rows="4" cols="100" placeholder="fun loving person, like conversations on sports etc." class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"> </textarea>
-                      </div>
-
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="county" class="block text-sm font-medium text-gray-700">County</label>
-                      <select id="county" name="county" autocomplete="county" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        <option>Cook</option>
-                        <option>DuPage</option>
-                        <option>Lake</option>
-                      </select>
-                    </div>
-      
-                    <div class="col-span-6">
-                      <label for="location" class="block text-sm font-medium text-gray-700">Street address</label>
-                      <input type="text" name="location" id="location" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                      <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                      <input type="text" name="city" id="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                      <label for="state" class="block text-sm font-medium text-gray-700">State</label>
-                      <input type="text" name="state" id="state" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                      <label for="zip" class="block text-sm font-medium text-gray-700">ZIP code</label>
-                      <input type="text" name="zip" id="zip" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-                  </div>
-                </div>
-                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                  <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                    Save
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-      <div class="hidden sm:block" aria-hidden="true">
-        <div class="py-5">
-          <div class="border-t border-gray-200"></div>
-        </div>
-      </div>
- 
-    <script src="driver_signup.js"></script>
 </body>
 
 </html>
