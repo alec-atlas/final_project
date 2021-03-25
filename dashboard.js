@@ -55,7 +55,7 @@ async function renderDriver(driver) {
         <a href="driverProfile.html?driverId=${driver.id}">
           <button
             class="block text-white bg-yellow-500 rounded w-full my-4 py-2 font-bold text-xl uppercase mx-auto container">
-            <span>Book a ride with me!</span>
+            <span>learn more about me!</span>
           </button>
         </a>
       </div>
