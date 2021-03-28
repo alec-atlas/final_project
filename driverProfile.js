@@ -73,16 +73,29 @@ async function renderDriverProfile(driver) {
             </div>
         </div>
 
-        <div class="my-8 w-1/2 mx-auto bg-gray-50 md:flex md:flex-wrap border-2 border-yellow-500">
+        <div class="my-8 md:w-1/2 mx-auto bg-gray-50 md:flex md:flex-wrap border-2 border-yellow-500">
             <div class="container mx-auto md:p-4 w-full">
                 <div class="p-4 md:p-2 md:flex">
-                    <div class="md:w-1/2 p-2"><img src="${driver.profilePicUrl}"></div>
+                    <div class="md:w-1/2 p-2"><img class="object-contain h-auto w-auto object-center" src="${driver.profilePicUrl}"></div>
                     <div class="md:w-1/2 p-2">
                         <div class="text-2xl font-bold text-gray-900">Driver Info:</div>
-                            <ul class="list-disc ml-6">
-                                <li>Age: ${driver.age}</li>
-                                <li>About Me: ${driver.bio}</li>
-                                <li>Fun Fact: ${driver.funFact}</li>
+                            <ul class="ml-6">
+                                <li>
+                                    <div class="font-bold mt-4">Location:</div>  
+                                    <div>${driver.city}, ${driver.state}</div>  
+                                </li>
+                                <li>
+                                    <div class="font-bold mt-4">Age:</div>  
+                                    <div>${driver.age}</div>  
+                                </li>
+                                <li>
+                                    <div class="font-bold mt-4">About Me:</div>  
+                                    <div>${driver.bio}</div>  
+                                </li>
+                                <li>
+                                    <div class="font-bold mt-4">Fun Fact:</div>  
+                                    <div>${driver.funFact}</div>  
+                                </li>
                             </ul>  
                         <a href="${driver.calendly}">
                             <button class="block text-white bg-yellow-500 rounded w-full py-4 font-bold text-2xl uppercase mx-auto container mt-4">
