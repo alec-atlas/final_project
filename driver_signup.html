@@ -4,19 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Driver Sign-Up</title>
+  <title>GOLDEN</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
 <body class="mx-auto px-8 container bg-yellow-50">
-  <div>
-    <h1 class="text-xl py-4 px-8">
-      <a href="index.html" class="mx-auto container">
-        <span class="font-bold text-yellow-500">GOLDEN</span>
-      </a>
-    </h1>
+  <div class="flex justify-center">
+    <div class="sign-in-or-sign-out"></div>
   </div>
+
+  <!-- HEADER -->
+  <div class="md:w-3/4 pt-8">
+    <a href="index.html" class="mx-auto container">
+      <span class="text-4xl font-bold text-yellow-500">GOLDEN</span>
+    </a>
+  </div>
+
   <div class="hidden sm:block" aria-hidden="true">
     <div class="py-5">
       <div class="border-t border-gray-200"></div>
@@ -24,20 +28,20 @@
   </div>
 
   <div class="mt-10 sm:mt-0">
-    <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="md:grid md:grid-cols-2 md:gap-6">
       <div class="md:col-span-1">
         <div class="sm:px-0">
-          <h3 class="text-xl font-medium leading-6 text-yellow-500 py-4 px-8">Why Drive for Golden?</h3>
+          <h3 class="text-xl font-bold leading-6 text-yellow-500 py-4 px-8">Why Drive for Golden?</h3>
           <p class="m-4 text-2xl text-gray-600">
           <ol class="m-8">
             <li>
-              <h3 class="m-4">✅ &nbsp; HELP Seniors in need</h3>
+              <h3 class="m-4 font-medium">✅ &nbsp; HELP Older Adults in need</h3>
             </li>
             <li>
-              <h3 class="m-4">✅ &nbsp; Work on your OWN time</h3>
+              <h3 class="m-4 font-medium">✅ &nbsp; Work on YOUR OWN time</h3>
             </li>
             <li>
-              <h3 class="m-4">✅ &nbsp; Get paid INSTANTLY</h3>
+              <h3 class="m-4 font-medium">✅ &nbsp; Make MONEY</h3>
             </li>
           </ol>
           <h2 class="text-lg font-medium leading-6 text-gray-900 py-4 px-8"> Please fill in your details and a Golden
@@ -48,19 +52,23 @@
 
       <form name="contact" netlify>
         <p>
-          <label class="text-lg font-medium text-gray-900">Name <input type="text" name="name" /></label>
+          <label class="text-lg font-medium text-gray-900">First and Last Name:<input type="text" name="name"
+              class="border w-full" /></label>
         </p>
         <p class="mt-2">
-          <label class="text-lg font-medium text-gray-900 mt-6">Email <input type="email" name="email" /></label>
+          <label class="text-lg font-medium text-gray-900 mt-6">Email address:<input type="email" name="email"
+              class="border w-full" /></label>
         </p>
         <p class="mt-2">
-          <label class="text-lg font-medium text-gray-900 mt-6">Phone Number <input type="text" name="phone number" /></label>
+          <label class="text-lg font-medium text-gray-900 mt-6">Phone Number:<input type="text" name="phone number"
+              class="border w-full" /></label>
         </p>
         <p>
-          <button type="submit" class="mt-6 block text-white bg-yellow-500 rounded w-full py-4 font-bold text-2xl uppercase mx-auto container">Submit</button>
+          <button type="submit"
+            class="mt-6 block text-white bg-yellow-500 rounded w-full py-4 font-bold text-2xl uppercase mx-auto container">Submit</button>
         </p>
       </form>
-      
+
     </div>
   </div>
 
